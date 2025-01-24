@@ -15,8 +15,7 @@ charsList := []string{"A", "B", "C", "-"}
 
 labels, probs, chars, _:= bd.Decode(predictedSeq, charsList)
 
-fmt.Println(labels)
-fmt.Println(probs)
-fmt.Println(chars)
-
+fmt.Println(labels) // "BAC", "BACA"
+fmt.Println(probs) //-3.4, -3
+fmt.Println(chars) // {1, 0, 2}, {1, 0, 2, 0}
 ```
